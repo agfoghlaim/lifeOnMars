@@ -1,0 +1,17 @@
+<ion-view>
+  <ion-header-bar class="bar-stable">
+        <h1 class="title">Settings</h1>
+        <a href="#/homeUrl">NASA Picture of the Day</a>
+      </ion-header-bar>
+      <ion-content>
+      <h4>Show Pictures from:</h4><br>
+        <ion-list>
+         <ion-radio ng-model="numDays" ng-value="1" ng-change="numberDays(numDays)">Today</ion-radio>
+          <ion-radio ng-model="numDays" ng-value="7" ng-click="numberDays(numDays)">Last 7 Days</ion-radio>
+          <ion-radio ng-model="numDays" ng-value="14" ng-click="numberDays(numDays)">Last 14 Days</ion-radio>
+        </ion-list>
+       
+      
+      </ion-content>
+    </ion-pane>
+</ion-view>
