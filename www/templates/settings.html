@@ -5,23 +5,9 @@
   </ion-header-bar>
   <ion-content>
     <h4>Show Pictures from:</h4><br>
-    
-      <ion-list>
-        <ion-radio ng-model="numDays" ng-value="defaultValue" ng-change="numberDays(numDays)" checked>Today</ion-radio>
-        <ion-radio ng-model="numDays" ng-value="7" ng-click="numberDays(numDays)">Last 7 Days</ion-radio>
-        <ion-radio ng-model="numDays" ng-value="14" ng-click="numberDays(numDays)">Last 14 Days</ion-radio>
-      </ion-list>
-    
-
- <!--      <div ng-repeat="choice in choices" for="{{choice}}">
-       
-       
-         <ion-radio type="radio"
-             ng-model="amount.days"
-             ng-value= "choice"
-              ng-change="changeNoDays(amount.days)"
-             
-             >{{choice}}</ion-radio>
-    </div> -->
+    <div ng-repeat="choice in choices" for="{{choice}}">
+      <ion-radio type="radio" ng-model="amount.days" ng-value= "choice" ng-change="changeNoDays(amount.days)">{{choice}}
+      </ion-radio>
+    </div>
   </ion-content>  
 </ion-view>
