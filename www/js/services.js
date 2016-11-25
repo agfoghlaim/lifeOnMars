@@ -29,7 +29,7 @@ app.service('service2', function($http){
 								}
 							}
 
-							getUrlFormat(numberOfDays);  
+		getUrlFormat(numberOfDays);  
 
 		for(i in outputUrlArray){
 			$http.get(outputUrlArray[i]).then(funGood, funBad);

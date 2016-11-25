@@ -1,24 +1,21 @@
-//SETTINGS CONTROLLER
 
 app.controller('groundControl', function($scope, service1){
 
-$scope.amount = {days:1};
-$scope.choices = [1,7,14];
-$scope.changeNoDays = function(choice){
-service1.getSet(choice);
-}
-
+	$scope.amount = {days:1};
+	$scope.choices = [1,7,14];
+	$scope.changeNoDays = function(choice){
+	service1.getSet(choice);
+	}
 
 });
 
 
 
 app.controller('majorTom', function($scope, service1, service2){
+
 	var noOfDays = service1.getSet();
 	service2.getPhoto(responseGood, responseBad, noOfDays);
 	$scope.nasaPhotosArray=[];
-
-
 	function responseGood(response){
 		$scope.nasaPhotosArray.push(response);
 		$scope.nasaPhotosArray.sort(function(a,b){
@@ -38,8 +35,6 @@ app.controller('majorTom', function($scope, service1, service2){
 		alert("ERROR: " + status + " " + text);
 		}
 	};
-
-		
 
 });
 
