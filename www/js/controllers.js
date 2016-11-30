@@ -38,6 +38,7 @@ app.controller('majorTom', function($scope, service1, service2){
 			console.log($scope.nasaPhotosArray[i].media_type);
 			if($scope.nasaPhotosArray[i].media_type ==='video'){
 				$scope.video = true;
+				console.log("hi marie this if video t/f " + $scope.video);
 				$scope.image = false;
 
 			}
