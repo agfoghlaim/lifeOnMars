@@ -2,9 +2,12 @@
 app.controller('groundControl', function($scope, service1){
 
 	$scope.amount = {days:1};
-	$scope.choices = [1,7,30];/////////14
+	//$scope.choices = [1,7,14];
+	$scope.choices = [{theDay: 'Today', theDays: 1}, {theDay: 'Last 7 days', theDays: 7},{theDay: 'Last 14 days', theDays: 14},];
 	$scope.changeNoDays = function(choice){
 	service1.getSet(choice);
+	
+
 	}
 
 });
@@ -33,19 +36,6 @@ app.controller('majorTom', function($scope, service1, service2){
 				return 0 ;
 			}
 		});
-		////////////////iframe or image thing
-		for(i in $scope.nasaPhotosArray){
-			console.log($scope.nasaPhotosArray[i].media_type);
-			if($scope.nasaPhotosArray[i].media_type ==='video'){
-				$scope.video = true;
-				console.log("hi marie this if video t/f " + $scope.video);
-				$scope.image = false;
-
-			}
-			$scope.video= false;
-			$scope.image = true;
-		}
-		////////////////////////////////
 	};
 
 	function responseBad(status, text){

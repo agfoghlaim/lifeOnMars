@@ -33,9 +33,9 @@ var app = angular.module('myNews',  ['ionic'])
 })
 
 
-.config(function($sceDelegateProvider,$stateProvider, $urlRouterProvider, $ionicConfigProvider) {
- 
- $sceDelegateProvider.resourceUrlWhitelist(['**']);
+.config(function($sceDelegateProvider, $stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+
+$sceDelegateProvider.resourceUrlWhitelist(['**']);
 $ionicConfigProvider.views.maxCache(0);
 
 
