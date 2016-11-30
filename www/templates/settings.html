@@ -5,7 +5,7 @@
   </ion-header-bar>
   <ion-content>
     <h4>Show Pictures from:</h4><br>
-    <div ng-repeat="choice in choices" for="{{choice}}">
+    <div ng-repeat="choice in choices"  > 
       <ion-radio type="radio" ng-model="amount.days" ng-value= "choice" ng-change="changeNoDays(amount.days)">{{choice}}
       </ion-radio>
     </div>

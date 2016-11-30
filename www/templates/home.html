@@ -13,8 +13,18 @@
           </ion-card-header>
           <ion-card-content>
             <p>{{pic.explanation}}</p>
-            <img ng-src="{{pic.url}}">
+            <!-- <img  ng-if"image" ng-src="{{pic.url}}"> -->
+            <!--i frame thing -->
+                <iframe  height="380" ng-src="{{pic.url}}" scrolling="no" frameborder="0" allowfullscreen></iframe>
+            <!--i frame thing -->
+  <br />
           </ion-card-content>
+
+          
+           
+        
+
+
         </ion-card>
       </div>
     </ion-content>
