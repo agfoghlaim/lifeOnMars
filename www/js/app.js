@@ -1,16 +1,6 @@
-// Ionic Starter App
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
 var app = angular.module('myNews',  ['ionic'])
-////////i frame
 
-// .config(function($sceDelegateProvider) {
-//   $sceDelegateProvider.resourceUrlWhitelist(['**']);
-// });
-
-/////////iframe
 
 
 
@@ -41,7 +31,6 @@ $ionicConfigProvider.views.maxCache(0);
 
   $stateProvider
   .state('settingsState', {
-    //cache: false,
       url: "/settingsUrl",
       templateUrl: 'templates/settings.html',
       controller: 'groundControl'
@@ -50,7 +39,6 @@ $ionicConfigProvider.views.maxCache(0);
     $stateProvider
   .state('homeState', {
       url: "/homeUrl",
-      //cache: false,
       templateUrl: 'templates/home.html',
       controller: 'majorTom'
   });
